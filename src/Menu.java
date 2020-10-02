@@ -24,7 +24,7 @@ public class Menu {
                 7. Exercice 7 (afficher la factorielle d'un nombre)
                 8. Exercice 8 (afficher le nombre le plus grand parmi 20 nombres)
                 9. Exercice 9 (afficher le nombre le plus grand parmi vos nombres)
-                10. Exercice 10 (afficher la monnaie après la lecture du prix de 5 articles)
+                10. Exercice 10 (afficher la monnaie après la lecture du prix de vos articles)
                 11. Exercice 11 (afficher les chances de gagner aux courses)
 
                 Entrez le numéro correspondant à votre choix ou 'O' pour quitter le programme:""");
@@ -39,25 +39,119 @@ public class Menu {
     }
 
     public static void performAction(int selection) {
-
+        int n = 1;
         switch (selection) {
             case 0 -> {
                 System.out.println("Merci d'avoir employé notre application !");
                 System.exit(0);
             }
-            case 1 -> Ex1();
-            case 2 -> Ex2();
-            case 3 -> Ex3();
-            case 4 -> Ex4();
-            case 5 -> Ex5();
-            case 6 -> Ex6();
-            case 7 -> Ex7();
-            case 8 -> Ex8();
-            case 9 -> Ex9();
-            case 10 -> Ex10();
-            case 11 -> Ex11();
+            case 1 -> {
+                while (n != 0) {
+                    Ex1();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 2 ->{
+                while (n != 0) {
+                    Ex2();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 3 -> {
+                while (n != 0) {
+                    Ex3();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 4 -> {
+                while (n != 0) {
+                    Ex4();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 5 -> {
+                while (n != 0) {
+                    Ex5();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 6 -> {
+                while (n != 0) {
+                    Ex6();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 7 -> {
+                while (n != 0) {
+                    Ex7();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 8 -> {
+                while (n != 0) {
+                    Ex8();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 9 -> {
+                while (n != 0) {
+                    Ex9();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 10 -> {
+                while (n != 0) {
+                    Ex10();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
+            case 11 -> {
+                while (n != 0) {
+                    Ex11();
+                    againOrMenu();
+                    Scanner input = new Scanner(System.in);
+                    n = input.nextInt();
+                }
+                runMenu();
+            }
             default -> System.out.println("Saisie invalide, rééssayez.");
         }
+    }
+
+    public static void againOrMenu() {
+        int n;
+        System.out.println(" ");
+        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
     }
 
     public static void Ex1() {
@@ -73,19 +167,6 @@ public class Menu {
             } else {
                 System.out.println("Hélas, c'est faux.");
             }
-        }
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        Scanner input = new Scanner(System.in);
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex1();
         }
     }
 
@@ -104,18 +185,6 @@ public class Menu {
         } else {
             System.out.println("Bien !");
         }
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex2();
-        }
     }
 
     public static void Ex3() {
@@ -127,18 +196,6 @@ public class Menu {
 
         for (i = n + 1; i < n + 11; i++) {
             System.out.println(i + " ");
-        }
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex3();
         }
     }
 
@@ -152,18 +209,6 @@ public class Menu {
 
         for (i = n + 1; i < n + 11; i++) {
             System.out.println(i + " ");
-        }
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex4();
         }
     }
 
@@ -180,18 +225,6 @@ public class Menu {
             result = n * i;
             System.out.println(n + "*" + i + "=" + result);
         }
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex5();
-        }
     }
 
     public static void Ex6() {
@@ -207,19 +240,6 @@ public class Menu {
             result = result + i;
         }
         System.out.println(result);
-
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex6();
-        }
     }
 
     public static void Ex7() {
@@ -235,19 +255,6 @@ public class Menu {
             result = result * i;
         }
         System.out.println(result);
-
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex7();
-        }
     }
 
     public static void Ex8() {
@@ -268,72 +275,44 @@ public class Menu {
             }
         }
         System.out.println("Le plus grand nombre entré est " + result + " sa position est " + I);
-
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        Scanner input = new Scanner(System.in);
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex8();
-        }
     }
 
     public static void Ex9() {
         int n = 1;
-        int i = 0;
-        int I = 0;
+        int i = 1;
+        int I = 1;
         int result = 0;
 
         while (n != 0) {
-            System.out.println("Entrez le nombre " + i + " :(entrez '0' pour arrêter la séquence");
+            System.out.println("Entrez le nombre numéro " + i + " :(entrez '0' pour arrêter la séquence");
 
             Scanner input = new Scanner(System.in);
             n = input.nextInt();
 
             i = i + 1;
 
-            if (i == 0 || n > result) {
+            if (i == 1 || n > result) {
                 result = n;
                 I = i;
             }
         }
         System.out.println("Le plus grand nombre entré est " + result + " sa position est " + I);
-
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        Scanner input = new Scanner(System.in);
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex9();
-        }
     }
 
     public static void Ex10() {
-        int p;
+        int p=1;
         int n;
-        int i = 5;
+        int i = 0;
         int nfinal = 0;
         int N;
         int r10 = 0;
         int r5 = 0;
-        int r1 = 0;
+        int r1;
         int Nreste;
 
-        while (i != 0) {
-            i = i - 1;
-            System.out.println("Entrez le prix de l'article n°" + i);
+        while (p != 0) {
+            i = i + 1;
+            System.out.println("Entrez le prix de l'article n°" + i + " (entrez '0' si vous n'avez plus d'articles): ");
 
             Scanner input = new Scanner(System.in);
             p = input.nextInt();
@@ -354,29 +333,12 @@ public class Menu {
             r10 = r10 + 1;
             Nreste = Nreste - 10;
         }
-        System.out.println("Nous allons vous rendre " + r10 + " billet(s) de 10 euros.");
-
         while (Nreste >= 5) {
             r5 = r5 + 1;
             Nreste = Nreste - 5;
         }
-        System.out.println("Nous allons vous rendre " + r5 + " billet(s) de 5 euros.");
-
             r1 = Nreste;
-        System.out.println("Nous allons vous rendre " + r1 + " pièce(s) de 1 euros.");
-
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex10();
-        }
+        System.out.println("Nous allons vous rendre " + r10 + " billet(s) de 10 euros, "+ r5 + " billet(s) de 5 euros, et " + r1 + " pièce(s) de 1 euros.");
     }
 
     public static void Ex11() {
@@ -386,8 +348,8 @@ public class Menu {
         int factn = 1;
         int factp = 1;
         int factnp = 1;
-        int X = 1 ;
-        int Y= 1 ;
+        int X ;
+        int Y ;
 
         System.out.println("Entrez le nombre de chevaux partants");
         Scanner input = new Scanner(System.in);
@@ -410,20 +372,6 @@ public class Menu {
 
         System.out.println("Vous avez une chance sur " +X+ " de gagner dans l'ordre.");
         System.out.println("Vous avez une chance sur " + Y + " de gagner dans le désordre.");
-
-        // choix entre retour au menu et reprise de l'exercice
-        System.out.println(" ");
-        System.out.println("Souhaitez-vous retenter l'exercice ? Entrez '1' pour oui et '0' pour non: ");
-
-        n = input.nextInt();
-
-        if (n == 0) {
-            runMenu();
-        }
-        if (n == 1) {
-            Ex11();
-        }
     }
 }
-
 
